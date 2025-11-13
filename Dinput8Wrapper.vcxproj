@@ -65,6 +65,7 @@
     <ClInclude Include="Game Files\InitialD5.h" />
     <ClInclude Include="Game Files\InitialD4Japan.h" />
     <ClInclude Include="Game Files\M2Emulator.h" />
+    <ClInclude Include="Game Files\ProjectR.h" />
     <ClInclude Include="Game Files\R-Tuned.h" />
     <ClInclude Include="Game Files\Rambo.h" />
     <ClInclude Include="Game Files\RingRiders.h" />
@@ -91,6 +92,7 @@
     <None Include="Includes\SDL2.dll" />
     <None Include="LICENSE" />
     <None Include="packages.config" />
+    <None Include="SDL2.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game Files\AliensExtermination.cpp" />
@@ -152,6 +154,7 @@
     <ClCompile Include="Game Files\Machstorm.cpp" />
     <ClCompile Include="Game Files\OutRun2Fake.cpp" />
     <ClCompile Include="Game Files\PokkenTournament.cpp" />
+    <ClCompile Include="Game Files\ProjectR.cpp" />
     <ClCompile Include="Game Files\R-Tuned.cpp" />
     <ClCompile Include="Game Files\Rambo.cpp" />
     <ClCompile Include="Game Files\RingRiders.cpp" />
@@ -243,20 +246,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>

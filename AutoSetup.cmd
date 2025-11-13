@@ -181,6 +181,9 @@ cd..
 cd WMMT6RR
 rename dinput8.dll d3d11.dll
 cd..
+cd Project R
+rename dinput8.dll winmm.dll
+cd..
 del dinput8.exp
 del dinput8.lib
 del SDL2.dll

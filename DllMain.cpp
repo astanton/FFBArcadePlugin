@@ -75,6 +75,7 @@ along with FFB Arcade Plugin.If not, see < https://www.gnu.org/licenses/>.
 #include "Game Files/MAMESupermodel.h"
 #include "Game Files/OutRun2Fake.h"
 #include "Game Files/OutRun2Real.h"
+#include "Game Files/ProjectR.h"
 #include "Game Files/SegaRaceTV.h"
 #include "Game Files/SegaRacingClassic.h"
 #include "Game Files/SegaRally3.h"
@@ -1088,6 +1089,7 @@ const int INITIAL_D_THEARCADE_V231 = 82;
 const int WASTELAND_RACERS_2071 = 83;
 const int WMMT_6_RR = 84;
 const int HUMMER = 85;
+const int PROJECT_R = 87;
 HINSTANCE Get_hInstance()
 {
 	MEMORY_BASIC_INFORMATION mbi;
@@ -2409,6 +2411,9 @@ DWORD WINAPI FFBLoop(LPVOID lpParam)
 	case CHASE_HQ_2:
 		game = new ChaseHQ2;
 		break;
+	case PROJECT_R:
+		game = new ProjectR;
+		break;
 	case DAYTONA_3:
 		game = new Daytona3;
 		break;
@@ -2728,6 +2733,8 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ulReasonForCall, LPVOID lpReserved)
 		hlp.log("loading original library...");
 
 		GetPrivateProfileStringA("Settings", "ChainLoad", "", chainedDLL, 256, ".\\FFBplugin.ini");
+
+		OutputDebugStringA("FFBArcadePluginLoaded");
 
 		if (0 == strlen(chainedDLL))
 		{
